@@ -54,7 +54,7 @@ npm install
 node app.js
 ```
 
-之后在浏览器中输入`localhost:3000`，就能看到页面了。如果你没有修改化hosts文件的话。
+之后在浏览器中输入`localhost:3000`，就能看到页面了。如果你没有个性化hosts文件的话。
 
 
 **代码说明**
@@ -70,6 +70,7 @@ node app.js
 > 注意：如果我们需要使用JSX，则`<script>`标签的type属性需要设置为text/babel。
 
 代码文件：study1.html
+
 运行地址：localhost:3000
 
 **第一阶段 React JSX**
@@ -78,7 +79,7 @@ React使用JSX来替代常规的JavaScript。
 
 JSX是一个看起来很像XML的JavaScript语法扩展。
 
-我们不需要一定使用 JSX，但它有以下优点：
+我们不需要一定使用JSX，但它有以下优点：
 
 + JSX执行更快，因为它在编译为JavaScript代码后进行了优化。
 + 它是类型安全的，在编译过程中就能发现错误。
@@ -104,7 +105,7 @@ ReactDOM.render(
 
 中。下同。
 
-我们可以在 JSX 中使用 JavaScript 表达式。表达式写在花括号 {} 中。实例如下：
+我们可以在JSX中使用JavaScript表达式。表达式写在花括号{}中。实例如下：
 ```
 ReactDOM.render(
     <div>
@@ -115,7 +116,7 @@ ReactDOM.render(
     , document.getElementById('example') );
 ```
 
-在 JSX 中不能使用 if else 语句，单可以使用 conditional (三元运算) 表达式来替代。以下实例中如果变量 i 等于 1 浏览器将输出 true, 如果修改 i 的值，则会输出 false.
+在JSX中不能使用if else语句，单可以使用三元运算表达式来替代。以下实例中如果变量i等于1浏览器将输出'OK?', 如果修改i的值，则会输出'NOT BEST?'。
 
 ```
 var i=1; 
@@ -194,6 +195,7 @@ ReactDOM.render(
 ```
 
 代码文件：study2.html
+
 运行地址：localhost:3000?name=study2
 
 **第二阶段 组件**
@@ -247,6 +249,7 @@ ReactDOM.render(
 > 注意，在添加属性时，class属性需要写成className，for属性需要写成htmlFor，这是因为class和for是JavaScript的保留字。
 
 代码文件：study3.html
+
 运行地址：localhost:3000?name=study3
 
 我们可以通过创建多个组件来合成一个组件，即把组件的不同功能点进行分离。
@@ -292,5 +295,6 @@ ReactDOM.render(
 实例中WebSite组件使用了Name和Link组件来输出对应的信息，也就是说WebSite拥有Name和Link的实例。
 
 代码文件：study4.html
+
 运行地址：localhost:3000?name=study4
 
