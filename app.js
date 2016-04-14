@@ -20,8 +20,6 @@ app.get('/', function(req, res) {
         title: req.query.name,
         filename: fileName
     });
-
-    //res.sendFile(path.join(__dirname, fileName));
 })
 
 app.listen(3000, function() {
