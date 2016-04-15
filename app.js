@@ -9,8 +9,6 @@ app.use('/js', express.static('js'));
 
 app.get('/', function(req, res) {
     var fileName = req.query.name;
-    
-    console.log(fileName);
 
     if (!fileName) {
         fileName = 'study1.js';
